@@ -1,0 +1,10 @@
+git clone <url>
+
+git add <file>
+git commit -m <message>
+
+--> git commit -am <message>
+
+git push: push all file to repo
+
+
