@@ -1,0 +1,35 @@
+git clone <url>: download
+
+
+git diff: see change
+
+
+git add <filename>: make a change
+
+git commit -m "message": message for change above
+git commit -am "message": add & message in the same time.
+
+git status: get information now
+
+git push: to push online
+
+git pull: get changed file from online
+
+(if some merge conflict happen: just choose one then commit and push again)
+
+git log: see history 
+
+git reset: (should use git log to find the commit)
+    git reset --hard <commit>
+    git reset --hard origin/master
+
+branching:
+git branch; show all brannch
+    git branch <branch name>: create new branch
+    git checkout <branch name>: switch to new branch
+
+
+git merge:
+    example: git merge tests
+    git branch -D tests: delete branch
+    
