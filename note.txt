@@ -17,8 +17,9 @@ git pull: get changed file from online
 
 (if some merge conflict happen: just choose one then commit and push again)
 
-git log: see history 
+git log: see history
 
+# want to restore
 git reset: (should use git log to find the commit)
     git reset --hard <commit>
     git reset --hard origin/master
@@ -27,9 +28,10 @@ branching:
 git branch; show all brannch
     git branch <branch name>: create new branch
     git checkout <branch name>: switch to new branch
+    git checkout -b <branch name>: create and switch to new branch  
 
 
 git merge:
     example: git merge tests
     git branch -D tests: delete branch
-    
+
