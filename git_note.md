@@ -18,8 +18,8 @@ git config --global -e: edit all global setting
 
 git clone <url>: download
 
-
 git diff: see change
+we can use difftool: <refference>
 
 1. Add file
 git add <file1> <file2>: make a change, everytime before commit
@@ -38,9 +38,11 @@ git commit -m "message": message for change above
 git commit -am "message": add & message in the same time.
 
 4. ignore file
-
+- echo <folder or file want to add> > .gitignore
+- code .gitignore : show & add folder want to ignore
 
 git status: get information now
+git status -s: for short, easy to follow.
 
 git push: to push online
 
@@ -48,11 +50,28 @@ git pull: get changed file from online
 
 (if some merge conflict happen: just choose one then commit and push again)
 
-git log: see history 
+5. git log
+* view
+git log: see history
+git log --oneline: easy to use
+git log --oneline --reverse
+
+* show log
+git show <commit number or a part of commit number>
+git show HEAD~<index>: index from HEAD
+git ls-tree HEAD~<index> 
+
+6. git reset & restore
 
 git reset: (should use git log to find the commit)
     git reset --hard <commit>
     git reset --hard origin/master
+
+git restore --staged <filename or .: all file>
+git restore --source=HEAD~<index> <filename>
+
+git clean -fd: undo everything and not tracking
+
 
 branching:
 git branch; show all brannch
