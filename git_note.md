@@ -1,5 +1,6 @@
 # Git Note
 ## config
+
 git config --global user.name <name>
 git config --global user.email <email>
 git config --global core.editor "code --wait"
@@ -12,23 +13,32 @@ git config --global -e: edit all global setting
 
 * git init
 * show folder: ls -a
-
-
-
-
+* show file: git ls-files
+* delete file: git rm <file1> <file2>
 
 git clone <url>: download
 
 
 git diff: see change
 
-
-git add <filename>: make a change, everytime before commit
+1. Add file
+git add <file1> <file2>: make a change, everytime before commit
 * git add . --> add all file in folder
 * git add *.txt: add all file txt
 
+2. Remove & rename, move
+
+git mv <file1> <file2>
+
+remove from the the stage: git rm --cached <filename>
+
+3. commit
+
 git commit -m "message": message for change above
 git commit -am "message": add & message in the same time.
+
+4. ignore file
+
 
 git status: get information now
 
